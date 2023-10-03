@@ -39,6 +39,7 @@ select_columns = {"casosAcumulado": "Casos Acumulados",
 
 # =====================================================================
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])
+server = app.server
 
 
 fig = px.choropleth_mapbox(df_states_, locations="estado",
